@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="Gere senhas fortes gratuitamente, sem enviar seus dados para servidores.">
+  <title>Gerador de Senhas Seguras</title>
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header class="intro"><span class="eyebrow">SEGURANÇA DIGITAL PARA TODOS</span><h1>Gerador de <span>Senhas Seguras</span></h1><p>Crie senhas fortes em segundos. Gratuito, simples e privado.</p></header>
+    <section class="panel" aria-label="Gerador de senhas">
+      <div class="panel-title"><span class="dot"></span> Sua nova senha</div>
+      <div class="password-box"><output id="password" aria-live="polite">Clique em Gerar senha</output><button id="copy" class="icon-button" title="Copiar senha" aria-label="Copiar senha">Copiar</button></div>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+      <div class="row"><label for="length">Tamanho da senha</label><strong id="length-value">18 caracteres</strong></div>
+      <input type="range" id="length" min="12" max="40" value="18">
+      <div class="range-labels"><span>12</span><span>40</span></div>
+      <fieldset><legend>Incluir caracteres</legend><div class="options"><label><input type="checkbox" id="uppercase" checked> Letras maiúsculas (A–Z)</label><label><input type="checkbox" id="lowercase" checked> Letras minúsculas (a–z)</label><label><input type="checkbox" id="numbers" checked> Números (0–9)</label><label><input type="checkbox" id="symbols" checked> Símbolos (!@#$...)</label></div></fieldset>
+      <button id="generate" class="primary">↻ &nbsp; Gerar nova senha</button>
+      <p class="privacy">🔒 Sua senha é criada no seu dispositivo. Não armazenamos nem enviamos senhas.</p>
+    </section>
+    <section class="tips"><h2>Dicas rápidas de segurança</h2><div class="tips-grid"><article><strong>Uma senha por conta</strong><p>Evite reutilizar a mesma senha em serviços diferentes.</p></article><article><strong>Ative a verificação em duas etapas</strong><p>Uma camada extra de proteção faz diferença.</p></article><article><strong>Use um gerenciador de senhas</strong><p>Guarde suas senhas com segurança, sem precisar memorizá-las.</p></article></div></section>
+    <footer>Desenvolvido por <strong>Edson Lima</strong> · <a href="https://github.com/edsonhhl" target="_blank" rel="noopener noreferrer" id="github-link">GitHub</a><small>Projeto de Extensão II · Desenvolvimento Mobile</small></footer>
+  </main>
+</body>
+</html>
